@@ -1,0 +1,42 @@
+import pyttsx3
+import os
+
+pyttsx3.speak ("Hi  Welcome  to  my  new  tools")
+while True:
+ print( "How may i help you today")
+ p=input()
+ if (("run" in p) and ("chrome" in p)) or ("chrome" in p ):
+   pyttsx3.speak(" opening chrome")
+   os.system("chrome")
+ elif (("run" in p) and ("opera" in p) ) or ("opera" in p):
+   pyttsx3.speak(" opening opera")
+   os.system("opera")
+ elif ((("run" in p) and (("internet explorer" in p) or ("ie" in p)) ) or (" internet explorer " in p)):
+   pyttsx3.speak(" opening internet explorer")
+   os.system("internet explorer")
+ elif (("run" in p) and ("browser" in p)) or ("browser" in p ):
+   print("which browser do you want we have chrome,internet explorer, opera mini" , end= ' ')
+   p = input
+ elif (("run" in p) and ("notepad" in p)) or ("notepad" in p):
+   pyttsx3.speak(" opening notepad")
+   os.system ("notepad")
+ elif (("run" in p) and ("word" in p)) or ("word" in p):
+   pyttsx3.speak(" opening word")
+   os.system("word")
+ elif (("run" in p) and ("text editor" in p)) or ("editor" in p):
+   print("which editor do you want we have notepad, word" , end= ' ')
+   p = input
+ elif (("run" in p) and (" vlc player " in p)) or ("vlc" in p):
+   pyttsx3.speak(" opening vlc player")
+   os.system ("vlc player")
+ elif (("run" in p) and ("window playdr" in p)) or ("window player" in p):
+   pyttsx3.speak(" opening Window player")
+   os.system("wmplayer")
+ elif (("run" in p) and ("media player" in p)) or ("player" in p):
+   print("which media player do you want we have vlc player, window player" , end= ' ')
+   p = input()
+ elif ("no" in p) or ("don't" in p) :
+   print("bie, have a nice day ")
+   break
+ else:
+   print("Dont support") 
